@@ -3,9 +3,14 @@
 This project demonstrates the creation of a data lake using AWS services. 
 ## AWS Setup 
 The data lake is set up using Terraform, which automates the creation of the following AWS resources: 
-- S3 buckets for storing raw data and Athena query results- - AWS Glue Catalog database and crawlers for metadata management - Athena workgroup for querying data 
+- S3 buckets for storing raw data and Athena query results
+- AWS Glue Catalog database and crawlers for metadata management
+- Athena workgroup for querying data 
 
-Run the following commands: ```bash terraform init terraform apply  
+Run the following commands: 
+```bash 
+terraform init terraform apply
+```  
 
 ## Usage
 To query the data in AWS Athena on Windows, use the following command:
