@@ -9,10 +9,23 @@ The data lake is set up using Terraform, which automates the creation of the fol
 
 Run the following commands: 
 ```bash 
-terraform init terraform apply
+terraform init
+terraform apply
 ```  
 
 ## Usage
+
+To start the Glue crawler, use the following command:
+
+```bash
+
+aws glue start-crawler --name data-lake-crawler 
+```
+To check the status of the crawler, use:
+
+```bash
+aws glue get-crawler --name data-lake-crawler
+```
 To query the data in AWS Athena on Windows, use the following command:
 
 ```bash
